@@ -1,4 +1,4 @@
-package abno;
+package abno.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

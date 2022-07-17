@@ -7,4 +7,6 @@ module abno.abnochess {
 
     opens abno to javafx.fxml;
     exports abno;
+    exports abno.gui;
+    opens abno.gui to javafx.fxml;
 }
