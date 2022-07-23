@@ -36,9 +36,9 @@ public class BoardHandler {
             return;
 
         // Modify bitmaps
-        pieceBmap &= Long.MAX_VALUE ^ (1L << pieceIdx);
+        pieceBmap ^= 1L << pieceIdx;
         pieceBmap |= 1L << targetIdx;
-        colorBmap &= Long.MAX_VALUE ^ (1L << pieceIdx);
+        colorBmap ^= 1L << pieceIdx;
         colorBmap |= 1L << targetIdx;
 
     }
